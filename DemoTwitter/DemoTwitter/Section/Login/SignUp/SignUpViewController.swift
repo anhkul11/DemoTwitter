@@ -10,27 +10,21 @@
 import UIKit
 
 class SignUpViewController: UIViewController {
-
+  
   /// instantiate
   internal static func instantiate() -> SignUpViewController {
     return Storyboard.Login.instantiate(type: SignUpViewController.self)
   }
   
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-    }
+  @IBOutlet weak var stackView: UIStackView!
+  @IBOutlet weak var nicknameTextField: UITextField!
+  @IBOutlet weak var userNameTextField: UITextField!
+  @IBOutlet weak var passwordTextField: UITextField!
+  @IBOutlet weak var signUpButton: UIButton!
+  
+  override func viewDidLoad() {
+    super.viewDidLoad()
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
+    // Do any additional setup after loading the view.
+  }
 }

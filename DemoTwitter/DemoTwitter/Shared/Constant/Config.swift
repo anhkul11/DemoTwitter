@@ -8,3 +8,5 @@
 
 import Foundation
 import UIKit
+
+let UIAppDelegate = UIApplication.shared.delegate as! AppDelegate

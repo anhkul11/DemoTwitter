@@ -110,6 +110,12 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="ytQ-Cr-gaV"/>
                     </view>
+                    <connections>
+                        <outlet property="loginButton" destination="twW-7e-Rom" id="ASK-JE-zdj"/>
+                        <outlet property="passwordTextField" destination="dM2-GR-ax5" id="IEc-0U-3nH"/>
+                        <outlet property="stackView" destination="aph-SL-vum" id="yfx-Gk-nA9"/>
+                        <outlet property="usernameTextField" destination="G8n-Uu-lMb" id="74O-WC-SGY"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="V2d-3w-hzq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -146,7 +152,7 @@
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a3l-6m-4pQ">
                                         <rect key="frame" x="0.0" y="126" width="374" height="34"/>
-                                        <state key="normal" title="Login"/>
+                                        <state key="normal" title="Sign Up"/>
                                     </button>
                                 </subviews>
                                 <constraints>
@@ -162,6 +168,13 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="nbh-C6-FZZ"/>
                     </view>
+                    <connections>
+                        <outlet property="nicknameTextField" destination="fvL-az-vaZ" id="17f-5s-W4M"/>
+                        <outlet property="passwordTextField" destination="WDZ-Yp-7c6" id="k8g-Q5-37b"/>
+                        <outlet property="signUpButton" destination="a3l-6m-4pQ" id="ivF-2l-2SI"/>
+                        <outlet property="stackView" destination="D8h-UT-Ptl" id="ipg-Lo-zQX"/>
+                        <outlet property="userNameTextField" destination="0wP-Nd-Wm5" id="xyU-ND-wgg"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5A5-Ra-0kY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

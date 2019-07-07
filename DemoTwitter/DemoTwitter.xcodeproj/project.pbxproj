@@ -13,7 +13,7 @@
 		78049ED922D1B80F00548CFC /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 78049ED822D1B80F00548CFC /* Login.storyboard */; };
 		78049EDB22D1B82600548CFC /* NewFeed.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 78049EDA22D1B82600548CFC /* NewFeed.storyboard */; };
 		78049EDD22D1B86B00548CFC /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78049EDC22D1B86B00548CFC /* LoginViewController.swift */; };
-		78049EE122D1BC7500548CFC /* NewFeedController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78049EE022D1BC7500548CFC /* NewFeedController.swift */; };
+		78049EE122D1BC7500548CFC /* NewFeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78049EE022D1BC7500548CFC /* NewFeedViewController.swift */; };
 		78049EEA22D1C74D00548CFC /* LandingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78049EE922D1C74D00548CFC /* LandingViewController.swift */; };
 		78049EEC22D1C76100548CFC /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78049EEB22D1C76100548CFC /* SignUpViewController.swift */; };
 		782D065E22CF30B40014A273 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 782D065D22CF30B40014A273 /* AppDelegate.swift */; };
@@ -33,6 +33,12 @@
 		786C816B22D1CF420007A98C /* UserDefaultKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 786C816922D1CF420007A98C /* UserDefaultKey.swift */; };
 		786C816C22D1CF420007A98C /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 786C816A22D1CF420007A98C /* Config.swift */; };
 		786C816E22D1CFB10007A98C /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 786C816D22D1CFB10007A98C /* UIColor+Extension.swift */; };
+		786C817422D23B140007A98C /* Search.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 786C817322D23B140007A98C /* Search.storyboard */; };
+		786C817622D23B300007A98C /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 786C817522D23B300007A98C /* SearchViewController.swift */; };
+		786C817822D23B590007A98C /* MessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 786C817722D23B590007A98C /* MessageViewController.swift */; };
+		786C817A22D23B620007A98C /* NotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 786C817922D23B620007A98C /* NotificationViewController.swift */; };
+		786C817C22D23B710007A98C /* Message.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 786C817B22D23B710007A98C /* Message.storyboard */; };
+		786C817E22D23B7A0007A98C /* Notification.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 786C817D22D23B7A0007A98C /* Notification.storyboard */; };
 		90D2FB4BD63B2734F65E36B9 /* Pods_DemoTwitterTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15E6EC995D61C9CEEB1771EA /* Pods_DemoTwitterTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -55,7 +61,7 @@
 		78049ED822D1B80F00548CFC /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 		78049EDA22D1B82600548CFC /* NewFeed.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = NewFeed.storyboard; sourceTree = "<group>"; };
 		78049EDC22D1B86B00548CFC /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
-		78049EE022D1BC7500548CFC /* NewFeedController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewFeedController.swift; sourceTree = "<group>"; };
+		78049EE022D1BC7500548CFC /* NewFeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewFeedViewController.swift; sourceTree = "<group>"; };
 		78049EE922D1C74D00548CFC /* LandingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingViewController.swift; sourceTree = "<group>"; };
 		78049EEB22D1C76100548CFC /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		782D065A22CF30B40014A273 /* DemoTwitter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DemoTwitter.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -79,6 +85,12 @@
 		786C816922D1CF420007A98C /* UserDefaultKey.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDefaultKey.swift; sourceTree = "<group>"; };
 		786C816A22D1CF420007A98C /* Config.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
 		786C816D22D1CFB10007A98C /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
+		786C817322D23B140007A98C /* Search.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Search.storyboard; sourceTree = "<group>"; };
+		786C817522D23B300007A98C /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		786C817722D23B590007A98C /* MessageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageViewController.swift; sourceTree = "<group>"; };
+		786C817922D23B620007A98C /* NotificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationViewController.swift; sourceTree = "<group>"; };
+		786C817B22D23B710007A98C /* Message.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Message.storyboard; sourceTree = "<group>"; };
+		786C817D22D23B7A0007A98C /* Notification.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Notification.storyboard; sourceTree = "<group>"; };
 		A46FFC42A3E9B74E03567A19 /* Pods-DemoTwitterTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DemoTwitterTests.debug.xcconfig"; path = "Target Support Files/Pods-DemoTwitterTests/Pods-DemoTwitterTests.debug.xcconfig"; sourceTree = "<group>"; };
 		E215D53ECBEC9175A45816AC /* Pods-DemoTwitter.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DemoTwitter.debug.xcconfig"; path = "Target Support Files/Pods-DemoTwitter/Pods-DemoTwitter.debug.xcconfig"; sourceTree = "<group>"; };
 		F1A563A5CEA877520C41B7DC /* Pods-DemoTwitterTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DemoTwitterTests.release.xcconfig"; path = "Target Support Files/Pods-DemoTwitterTests/Pods-DemoTwitterTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -120,6 +132,9 @@
 				782D066122CF30B40014A273 /* Main.storyboard */,
 				78049ED822D1B80F00548CFC /* Login.storyboard */,
 				78049EDA22D1B82600548CFC /* NewFeed.storyboard */,
+				786C817322D23B140007A98C /* Search.storyboard */,
+				786C817B22D23B710007A98C /* Message.storyboard */,
+				786C817D22D23B7A0007A98C /* Notification.storyboard */,
 			);
 			path = StoryBoards;
 			sourceTree = "<group>";
@@ -127,7 +142,7 @@
 		78049EE222D1BC7900548CFC /* NewFeed */ = {
 			isa = PBXGroup;
 			children = (
-				78049EE022D1BC7500548CFC /* NewFeedController.swift */,
+				78049EE022D1BC7500548CFC /* NewFeedViewController.swift */,
 			);
 			path = NewFeed;
 			sourceTree = "<group>";
@@ -179,11 +194,11 @@
 		782D065C22CF30B40014A273 /* DemoTwitter */ = {
 			isa = PBXGroup;
 			children = (
-				786C815322D1CE650007A98C /* Shared */,
 				782D068E22CF3A270014A273 /* AppDelegate */,
 				782D068722CF39DC0014A273 /* View */,
 				782D069B22CF431E0014A273 /* Model */,
 				782D068522CF39CD0014A273 /* Section */,
+				786C815322D1CE650007A98C /* Shared */,
 				782D069322CF3A8A0014A273 /* Resource */,
 				782D069A22CF3D8A0014A273 /* SupportFile */,
 			);
@@ -202,6 +217,9 @@
 		782D068522CF39CD0014A273 /* Section */ = {
 			isa = PBXGroup;
 			children = (
+				786C817122D23AE50007A98C /* Notification */,
+				786C817022D23AE00007A98C /* Message */,
+				786C816F22D23ADA0007A98C /* Search */,
 				78049EE222D1BC7900548CFC /* NewFeed */,
 				78049ED622D1B79800548CFC /* Login */,
 				782D069922CF3D740014A273 /* LauchScreen */,
@@ -357,6 +375,30 @@
 			path = Utility;
 			sourceTree = "<group>";
 		};
+		786C816F22D23ADA0007A98C /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				786C817522D23B300007A98C /* SearchViewController.swift */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		786C817022D23AE00007A98C /* Message */ = {
+			isa = PBXGroup;
+			children = (
+				786C817722D23B590007A98C /* MessageViewController.swift */,
+			);
+			path = Message;
+			sourceTree = "<group>";
+		};
+		786C817122D23AE50007A98C /* Notification */ = {
+			isa = PBXGroup;
+			children = (
+				786C817922D23B620007A98C /* NotificationViewController.swift */,
+			);
+			path = Notification;
+			sourceTree = "<group>";
+		};
 		94DC682BB8C4C6DEFEF9A285 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -463,9 +505,12 @@
 			files = (
 				782D066822CF30B50014A273 /* LaunchScreen.storyboard in Resources */,
 				782D067E22CF319A0014A273 /* GoogleService-Info.plist in Resources */,
+				786C817E22D23B7A0007A98C /* Notification.storyboard in Resources */,
 				782D066522CF30B50014A273 /* Assets.xcassets in Resources */,
 				78049EDB22D1B82600548CFC /* NewFeed.storyboard in Resources */,
+				786C817422D23B140007A98C /* Search.storyboard in Resources */,
 				78049ED922D1B80F00548CFC /* Login.storyboard in Resources */,
+				786C817C22D23B710007A98C /* Message.storyboard in Resources */,
 				782D066322CF30B40014A273 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -571,6 +616,7 @@
 				782D066022CF30B40014A273 /* BaseViewController.swift in Sources */,
 				786C816622D1CF330007A98C /* FirebaseManager.swift in Sources */,
 				786C816E22D1CFB10007A98C /* UIColor+Extension.swift in Sources */,
+				786C817622D23B300007A98C /* SearchViewController.swift in Sources */,
 				786C816422D1CF2B0007A98C /* StoryBoard.swift in Sources */,
 				786C816C22D1CF420007A98C /* Config.swift in Sources */,
 				78049ED322D1B57000548CFC /* RootNavigationController.swift in Sources */,
@@ -580,11 +626,13 @@
 				786C816822D1CF3A0007A98C /* UIButton+Extension.swift in Sources */,
 				78049EEC22D1C76100548CFC /* SignUpViewController.swift in Sources */,
 				782D065E22CF30B40014A273 /* AppDelegate.swift in Sources */,
+				786C817822D23B590007A98C /* MessageViewController.swift in Sources */,
 				786C816322D1CF2B0007A98C /* Utility.swift in Sources */,
 				786C816B22D1CF420007A98C /* UserDefaultKey.swift in Sources */,
+				786C817A22D23B620007A98C /* NotificationViewController.swift in Sources */,
 				78049EDD22D1B86B00548CFC /* LoginViewController.swift in Sources */,
 				78049EEA22D1C74D00548CFC /* LandingViewController.swift in Sources */,
-				78049EE122D1BC7500548CFC /* NewFeedController.swift in Sources */,
+				78049EE122D1BC7500548CFC /* NewFeedViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

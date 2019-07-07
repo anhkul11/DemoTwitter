@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
-    <device id="retina6_1" orientation="portrait">
+    <device id="retina5_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -10,16 +10,31 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--New Feed Controller-->
+        <!--New Feed View Controller-->
         <scene sceneID="FzM-5g-ifW">
             <objects>
-                <viewController storyboardIdentifier="NewFeedController" id="2FG-ZF-lEZ" customClass="NewFeedController" customModule="DemoTwitter" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="NewFeedViewController" id="2FG-ZF-lEZ" customClass="NewFeedViewController" customModule="DemoTwitter" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="RVA-4r-F3A">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="0.42153561119999999" green="0.66640192269999998" blue="0.90983808040000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Y1c-zO-7Xl">
+                                <rect key="frame" x="0.0" y="20" width="414" height="716"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="KnW-We-H97" firstAttribute="trailing" secondItem="Y1c-zO-7Xl" secondAttribute="trailing" id="CBq-X2-qBq"/>
+                            <constraint firstItem="KnW-We-H97" firstAttribute="bottom" secondItem="Y1c-zO-7Xl" secondAttribute="bottom" id="lXh-xg-HIb"/>
+                            <constraint firstItem="Y1c-zO-7Xl" firstAttribute="leading" secondItem="KnW-We-H97" secondAttribute="leading" id="swT-W1-qXz"/>
+                            <constraint firstItem="Y1c-zO-7Xl" firstAttribute="top" secondItem="KnW-We-H97" secondAttribute="top" id="ynj-Vd-KMP"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="KnW-We-H97"/>
                     </view>
+                    <connections>
+                        <outlet property="tableView" destination="Y1c-zO-7Xl" id="kk1-Ds-xZp"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ezG-52-nC3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
