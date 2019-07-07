@@ -15,10 +15,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
   var window: UIWindow?
   var ref: DatabaseReference!
 
+  var rootNavigationController: RootNavigationController!
+  var rootTabbarController: RootTabBarController?
+  
   func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
     // Override point for customization after application launch.
     
-    FirebaseApp.configure()
+    setupFireBase()
+    setupRootViewController()
     return true
   }
 

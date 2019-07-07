@@ -7,9 +7,23 @@
 //
 
 import Foundation
+import Firebase
+import SwiftyUserDefaults
 
 extension AppDelegate {
   func setupFireBase() {
-    
+    FirebaseApp.configure()
+  }
+  
+  func setupRootViewController() {
+    let isLogin = Defaults[.isLogin]
+    if isLogin {
+      rootTabbarController = RootTabBarController.instantiate()
+      self.window?.rootViewController = rootTabbarController
+    } else {
+      let landingController = LandingViewController.instantiate()
+      rootNavigationController = RootNavigationController(rootViewController: landingController)
+      self.window?.rootViewController = rootNavigationController
+    }
   }
 }

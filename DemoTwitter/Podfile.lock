@@ -66,6 +66,8 @@ PODS:
   - RxRelay (5.0.0):
     - RxSwift (~> 5)
   - RxSwift (5.0.0)
+  - SnapKit (5.0.0)
+  - SwiftyUserDefaults (4.0.0)
 
 DEPENDENCIES:
   - Firebase/Analytics
@@ -73,6 +75,8 @@ DEPENDENCIES:
   - Firebase/Database
   - RxCocoa (~> 5)
   - RxSwift (~> 5)
+  - SnapKit (~> 5.0.0)
+  - SwiftyUserDefaults (~> 4.0)
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
@@ -89,6 +93,8 @@ SPEC REPOS:
     - RxCocoa
     - RxRelay
     - RxSwift
+    - SnapKit
+    - SwiftyUserDefaults
 
 SPEC CHECKSUMS:
   Firebase: 0c8cf33f266410c61ab3e2265cfa412200351d9c
@@ -104,7 +110,9 @@ SPEC CHECKSUMS:
   RxCocoa: fcf32050ac00d801f34a7f71d5e8e7f23026dcd8
   RxRelay: 4f7409406a51a55cd88483f21ed898c234d60f18
   RxSwift: 8b0671caa829a763bbce7271095859121cbd895f
+  SnapKit: fd22d10eb9aff484d79a8724eab922c1ddf89bcf
+  SwiftyUserDefaults: 6a1951df1daa19337862b677dd9a4b9bd4c288cd
 
-PODFILE CHECKSUM: 04c784c3506edb9b9785f812c18c92dd1bfc5127
+PODFILE CHECKSUM: b8c80402fa2f2ae61ea2e33ae395798fa6aecf8c
 
 COCOAPODS: 1.6.1
