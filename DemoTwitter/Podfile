@@ -9,6 +9,8 @@ target 'DemoTwitter' do
   pod 'RxSwift', '~> 5'
   pod 'RxCocoa', '~> 5'
   pod 'Firebase/Core'
+  pod 'Firebase/Analytics'
+  pod 'Firebase/Database'
 
   target 'DemoTwitterTests' do
     inherit! :search_paths
