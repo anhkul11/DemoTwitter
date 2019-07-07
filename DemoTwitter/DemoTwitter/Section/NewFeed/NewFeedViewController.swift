@@ -27,5 +27,15 @@ class NewFeedViewController: BaseViewController {
     self.title = "Home"
     self.leftNavigationButton = .avatar
     self.rightNavigationButton = .setting
+    
+    setupTableView()
+  }
+  
+  func setupTableView() {
+    tableView.separatorStyle = .singleLine
+    tableView.registerCellNibForClass(PostTableViewCell.self)
+    
+    tableView.dataSource = self
+    tableView.delegate = self
   }
 }
