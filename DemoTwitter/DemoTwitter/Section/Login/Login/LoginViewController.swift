@@ -35,9 +35,16 @@ class LoginViewController: UIViewController {
   }
   
   func bindingRx() {
-    loginButton.rx.tap.subscribe(onNext: { (_) in
-      Defaults[.isLogin] = true
-      UIAppDelegate.setupRootViewController()
+    loginButton.rx.tap.subscribe(onNext: { [weak self] (_) in
+      self?.doLogin()
     }).disposed(by: disposeBag)
+  }
+  
+  func doLogin() {
+    let userName = usernameTextField.text ?? ""
+    let password = passwordTextField.text ?? ""
+    Defaults[.user] = FirebaseManager.shared.login(userName: userName, password: password)
+    Defaults[.isLogin] = true
+    UIAppDelegate.setupRootViewController()
   }
 }

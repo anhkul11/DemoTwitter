@@ -45,9 +45,14 @@ class PostTableViewCell: UITableViewCell {
     avatarImageView.contentMode = .scaleAspectFit
     
     nickNameLabel.textColor = .black
-    accountLabel.textColor = .lightGray
-    timeLabel.textColor = .lightGray
+    nickNameLabel.font = UIFont.systemFont(ofSize: 14, weight: UIFont.Weight.bold)
     
+    accountLabel.textColor = .lightGray
+    accountLabel.font = UIFont.systemFont(ofSize: 14, weight: .medium)
+    
+    timeLabel.textColor = .lightGray
+    timeLabel.font = UIFont.systemFont(ofSize: 14, weight: .medium)
+
     moreButton.contentHorizontalAlignment = .right
     
     commentButton.contentHorizontalAlignment = .left
@@ -78,5 +83,12 @@ class PostTableViewCell: UITableViewCell {
         self?.likeButton.setImage(UIImage(named: "ic_heart"), for: .normal)
       }
     }).disposed(by: disposeBag)
+  }
+  
+  func configure(postModel: PostModel) {
+    self.nickNameLabel.text = postModel.nickName
+    self.accountLabel.text = postModel.account
+    self.timeLabel.text = postModel.dateTime
+    self.messageLabel.text = postModel.message
   }
 }

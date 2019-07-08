@@ -27,6 +27,8 @@ class BaseViewController: UIViewController {
         self.navigationItem.leftBarButtonItem = settingButton
       case .none:
         self.navigationItem.leftBarButtonItem = nil
+      case .close:
+        self.navigationItem.leftBarButtonItem = closeButton
       default:
         self.navigationItem.leftBarButtonItem = backButton
       }
@@ -42,6 +44,8 @@ class BaseViewController: UIViewController {
         self.navigationItem.rightBarButtonItem = settingButton
       case .none:
         self.navigationItem.rightBarButtonItem = nil
+      case .close:
+        self.navigationItem.rightBarButtonItem = closeButton
       default:
         self.navigationItem.rightBarButtonItem = backButton
       }
@@ -73,6 +77,14 @@ class BaseViewController: UIViewController {
     return UIBarButtonItem(customView: button)
   }()
   
+  lazy var closeButton: UIBarButtonItem = {
+    let button = UIButton(frame: CGRect(x: 0, y: 0, width: 40, height: 40))
+    button.setImage(UIImage(named: "ic_close"), for: .normal)
+    button.contentHorizontalAlignment = .left
+    button.addTarget(self, action: #selector(closeController), for: .touchUpInside)
+    return UIBarButtonItem(customView: button)
+  }()
+  
   override func viewDidLoad() {
     super.viewDidLoad()
     // Do any additional setup after loading the view.
@@ -92,5 +104,9 @@ extension BaseViewController {
   
   @objc func popController() {
     self.navigationController?.popViewController(animated: true)
+  }
+  
+  @objc func closeController() {
+    self.dismiss(animated: true, completion: nil)
   }
 }

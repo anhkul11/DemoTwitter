@@ -17,6 +17,8 @@ class NewFeedViewController: BaseViewController {
   
   @IBOutlet weak var tableView: UITableView!
   
+  var posts: [PostModel] = []
+  
   override func viewDidLoad() {
     super.viewDidLoad()
     

@@ -12,4 +12,6 @@ import SwiftyUserDefaults
 extension DefaultsKeys {
   /// User is loged in?
   static let isLogin = DefaultsKey<Bool>("isLogin", defaultValue: false)
+  
+  static let user = DefaultsKey<UserModel?>("user")
 }

@@ -7,8 +7,9 @@
 //
 
 import Foundation
+import SwiftyUserDefaults
 
-struct UserModel {
+struct UserModel: Codable, DefaultsSerializable {
   var name: String
   var userName: String
   var passWord: String

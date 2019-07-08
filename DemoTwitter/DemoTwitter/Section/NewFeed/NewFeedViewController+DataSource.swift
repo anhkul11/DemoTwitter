@@ -13,17 +13,21 @@ extension NewFeedViewController: UITableViewDataSource {
   func numberOfSections(in tableView: UITableView) -> Int {
     return 1
   }
+  
   func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-    return 5
+    return posts.count
   }
   
   func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
     let cell = tableView.dequeueReusableCell(withIdentifier: String.className(PostTableViewCell.self)) as! PostTableViewCell
+    cell.selectionStyle = .none
     return cell
   }
 }
 
 // MARK: Delegate
 extension NewFeedViewController: UITableViewDelegate {
-  
+  func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+    return
+  }
 }
