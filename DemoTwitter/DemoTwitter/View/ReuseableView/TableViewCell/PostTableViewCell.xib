@@ -20,14 +20,14 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="O3U-iG-EIz">
-                        <rect key="frame" x="16" y="21" width="50" height="50"/>
+                        <rect key="frame" x="16" y="65" width="60" height="60"/>
                         <constraints>
-                            <constraint firstAttribute="height" constant="50" id="1Js-Bi-dpg"/>
+                            <constraint firstAttribute="height" constant="60" id="1Js-Bi-dpg"/>
                             <constraint firstAttribute="width" secondItem="O3U-iG-EIz" secondAttribute="height" multiplier="1:1" id="BCl-Yq-Odn"/>
                         </constraints>
                     </imageView>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XWc-7s-ofC">
-                        <rect key="frame" x="74" y="4" width="230" height="171.5"/>
+                        <rect key="frame" x="84" y="4" width="220" height="171.5"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Account" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6gC-fg-HhN">
                                 <rect key="frame" x="60.5" y="8" width="47" height="14.5"/>
@@ -48,7 +48,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yhX-tq-9eh">
-                                <rect key="frame" x="180" y="8" width="50" height="22"/>
+                                <rect key="frame" x="170" y="8" width="50" height="22"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="50" id="2RT-K2-08l"/>
                                     <constraint firstAttribute="height" constant="22" id="i1h-gD-pd7"/>
@@ -56,22 +56,22 @@
                                 <state key="normal" image="ic_down"/>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="wdK-a1-8Wn">
-                                <rect key="frame" x="0.0" y="151.5" width="230" height="20"/>
+                                <rect key="frame" x="0.0" y="145.5" width="220" height="20"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HVm-sb-QP6">
-                                        <rect key="frame" x="0.0" y="0.0" width="56" height="20"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="53.5" height="20"/>
                                         <state key="normal" image="ic_comment"/>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bPf-a1-Oyo">
-                                        <rect key="frame" x="58" y="0.0" width="56" height="20"/>
+                                        <rect key="frame" x="55.5" y="0.0" width="53.5" height="20"/>
                                         <state key="normal" image="ic_retweet"/>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SiJ-b0-Xha">
-                                        <rect key="frame" x="116" y="0.0" width="56" height="20"/>
+                                        <rect key="frame" x="111" y="0.0" width="53.5" height="20"/>
                                         <state key="normal" image="ic_heart"/>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JYD-LP-qlk">
-                                        <rect key="frame" x="174" y="0.0" width="56" height="20"/>
+                                        <rect key="frame" x="166.5" y="0.0" width="53.5" height="20"/>
                                         <state key="normal" image="ic_upload"/>
                                     </button>
                                 </subviews>
@@ -79,8 +79,8 @@
                                     <constraint firstAttribute="height" constant="20" id="IsS-Uy-O4e"/>
                                 </constraints>
                             </stackView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uiM-jh-dFp">
-                                <rect key="frame" x="0.0" y="30.5" width="230" height="20.5"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uiM-jh-dFp">
+                                <rect key="frame" x="0.0" y="30.5" width="220" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -94,10 +94,10 @@
                             <constraint firstItem="m07-AX-RJU" firstAttribute="top" secondItem="XWc-7s-ofC" secondAttribute="top" constant="8" id="JLq-x7-OrG"/>
                             <constraint firstItem="yhX-tq-9eh" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Xui-Sd-zXM" secondAttribute="trailing" constant="4" id="Mc2-hv-Vfn"/>
                             <constraint firstItem="wdK-a1-8Wn" firstAttribute="leading" secondItem="XWc-7s-ofC" secondAttribute="leading" id="OYC-Ql-yCP"/>
-                            <constraint firstAttribute="bottom" secondItem="wdK-a1-8Wn" secondAttribute="bottom" id="OiS-Xd-IZw"/>
+                            <constraint firstAttribute="bottom" secondItem="wdK-a1-8Wn" secondAttribute="bottom" constant="6" id="OiS-Xd-IZw"/>
                             <constraint firstItem="6gC-fg-HhN" firstAttribute="top" secondItem="m07-AX-RJU" secondAttribute="top" id="PLH-zr-Nui"/>
                             <constraint firstItem="yhX-tq-9eh" firstAttribute="top" secondItem="XWc-7s-ofC" secondAttribute="top" constant="8" id="SJx-cP-E9d"/>
-                            <constraint firstItem="wdK-a1-8Wn" firstAttribute="top" relation="greaterThanOrEqual" secondItem="uiM-jh-dFp" secondAttribute="bottom" constant="8" id="aRf-AS-MBg"/>
+                            <constraint firstItem="wdK-a1-8Wn" firstAttribute="top" relation="greaterThanOrEqual" secondItem="uiM-jh-dFp" secondAttribute="bottom" constant="16" id="aRf-AS-MBg"/>
                             <constraint firstItem="uiM-jh-dFp" firstAttribute="leading" secondItem="XWc-7s-ofC" secondAttribute="leading" id="aZ4-iN-rCt"/>
                             <constraint firstItem="Xui-Sd-zXM" firstAttribute="leading" secondItem="6gC-fg-HhN" secondAttribute="trailing" constant="4" id="c32-yB-EPS"/>
                             <constraint firstAttribute="trailing" secondItem="yhX-tq-9eh" secondAttribute="trailing" id="jg1-C7-QY2"/>

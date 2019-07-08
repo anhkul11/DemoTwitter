@@ -21,6 +21,7 @@ extension NewFeedViewController: UITableViewDataSource {
   func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
     let cell = tableView.dequeueReusableCell(withIdentifier: String.className(PostTableViewCell.self)) as! PostTableViewCell
     cell.selectionStyle = .none
+    cell.configure(postModel: posts[indexPath.row])
     return cell
   }
 }
@@ -30,4 +31,5 @@ extension NewFeedViewController: UITableViewDelegate {
   func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
     return
   }
+  
 }

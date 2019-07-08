@@ -10,6 +10,6 @@ import UIKit
 
 extension UIColor {
   public static var tw_blue: UIColor {
-    return .blue
+    return #colorLiteral(red: 0.1141784713, green: 0.6315646768, blue: 0.9455979466, alpha: 1)
   }
 }

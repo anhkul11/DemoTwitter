@@ -25,7 +25,9 @@ func calculatePartIndicator(number: Int, divideBy: Int) throws -> (Int, Int) {
 /// Split mess
 func splitMessage(string: String, maxLenght: Int) throws -> [String] {
   // Split to words
-  let splits = string.split(separator: " ")
+  let splits = string.split { (character) -> Bool in
+    character == " " || character == "\n"
+  }
   
   // Validate message
   if string.count <= maxLenght {

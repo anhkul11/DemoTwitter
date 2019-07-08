@@ -53,6 +53,8 @@ class PostTableViewCell: UITableViewCell {
     timeLabel.textColor = .lightGray
     timeLabel.font = UIFont.systemFont(ofSize: 14, weight: .medium)
 
+    messageLabel.numberOfLines = 0
+    
     moreButton.contentHorizontalAlignment = .right
     
     commentButton.contentHorizontalAlignment = .left
@@ -88,7 +90,7 @@ class PostTableViewCell: UITableViewCell {
   func configure(postModel: PostModel) {
     self.nickNameLabel.text = postModel.nickName
     self.accountLabel.text = postModel.account
-    self.timeLabel.text = postModel.dateTime
+    self.timeLabel.text = postModel.dateTime.prefix(10).lowercased()
     self.messageLabel.text = postModel.message
   }
 }

@@ -55,26 +55,27 @@
                                     <constraint firstAttribute="width" constant="50" id="uLB-Lq-oec"/>
                                 </constraints>
                             </imageView>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" placeholder="What's happening?" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Thq-9E-8Q1">
-                                <rect key="frame" x="80" y="56.666666666666657" width="314" height="17"/>
-                                <nil key="textColor"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="What's is happening?" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="kcJ-DW-Hh5">
+                                <rect key="frame" x="86" y="40" width="308" height="696"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="72J-5M-Sxu" firstAttribute="trailing" secondItem="Thq-9E-8Q1" secondAttribute="trailing" constant="20" id="IVP-vF-LXZ"/>
-                            <constraint firstItem="Thq-9E-8Q1" firstAttribute="top" secondItem="72J-5M-Sxu" secondAttribute="top" constant="36.670000000000002" id="Nf9-5B-eco"/>
+                            <constraint firstItem="kcJ-DW-Hh5" firstAttribute="top" secondItem="72J-5M-Sxu" secondAttribute="top" constant="20" id="Kx3-Ob-Ta9"/>
                             <constraint firstItem="mEO-cu-U6B" firstAttribute="leading" secondItem="72J-5M-Sxu" secondAttribute="leading" constant="20" id="VqD-ZX-PIn"/>
-                            <constraint firstItem="Thq-9E-8Q1" firstAttribute="leading" secondItem="mEO-cu-U6B" secondAttribute="trailing" constant="10" id="l0b-sa-XWR"/>
+                            <constraint firstItem="kcJ-DW-Hh5" firstAttribute="leading" secondItem="mEO-cu-U6B" secondAttribute="trailing" constant="16" id="ghu-g7-uCF"/>
+                            <constraint firstItem="72J-5M-Sxu" firstAttribute="bottom" secondItem="kcJ-DW-Hh5" secondAttribute="bottom" id="hEf-Ft-fx6"/>
+                            <constraint firstItem="72J-5M-Sxu" firstAttribute="trailing" secondItem="kcJ-DW-Hh5" secondAttribute="trailing" constant="20" id="ows-aN-Ok6"/>
                             <constraint firstItem="mEO-cu-U6B" firstAttribute="top" secondItem="72J-5M-Sxu" secondAttribute="top" constant="20" id="v9c-rk-g8i"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="72J-5M-Sxu"/>
                     </view>
                     <connections>
                         <outlet property="imageView" destination="mEO-cu-U6B" id="fuN-A5-tHc"/>
-                        <outlet property="textField" destination="Thq-9E-8Q1" id="O1y-wo-f7I"/>
+                        <outlet property="textView" destination="kcJ-DW-Hh5" id="3ax-va-ncm"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XMd-fX-sSR" userLabel="First Responder" sceneMemberID="firstResponder"/>

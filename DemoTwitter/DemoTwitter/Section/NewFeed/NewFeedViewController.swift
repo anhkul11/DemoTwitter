@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Firebase
 
 class NewFeedViewController: BaseViewController {
   
@@ -23,6 +24,7 @@ class NewFeedViewController: BaseViewController {
     super.viewDidLoad()
     
     setupUI()
+    bindingRx()
   }
   
   func setupUI() {
@@ -39,5 +41,20 @@ class NewFeedViewController: BaseViewController {
     
     tableView.dataSource = self
     tableView.delegate = self
+  }
+  
+  func bindingRx() {
+    FirebaseManager.shared.postRef.queryOrderedByKey().observe(.value) { (snapShot) in
+      var newPosts: [PostModel] = []
+      for child in snapShot.children {
+        if let snapshot = child as? DataSnapshot,
+          let newPost = PostModel(snapshot: snapshot) {
+          newPosts.append(newPost)
+        }
+      }
+      
+      self.posts = newPosts.reversed()
+      self.tableView.reloadData()
+    }
   }
 }

@@ -27,6 +27,6 @@ final class FirebaseManager {
   }
   
   func addPost(postModel: PostModel) {
-    FirebaseManager.shared.postRef.child(postModel.dateTime).setValue(postModel.toAnyObject())
+    FirebaseManager.shared.postRef.childByAutoId().setValue(postModel.toAnyObject())
   }
 }
