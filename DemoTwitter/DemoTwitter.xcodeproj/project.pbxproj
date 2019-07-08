@@ -46,6 +46,14 @@
 		786C818A22D254FB0007A98C /* NewFeedViewController+DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 786C818922D254FB0007A98C /* NewFeedViewController+DataSource.swift */; };
 		786C818C22D255750007A98C /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 786C818B22D255750007A98C /* String+Extension.swift */; };
 		786C818F22D329910007A98C /* NewPostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 786C818E22D329910007A98C /* NewPostViewController.swift */; };
+		786C819122D39AF10007A98C /* SideMenu.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 786C819022D39AF10007A98C /* SideMenu.storyboard */; };
+		786C819422D39B140007A98C /* SideMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 786C819322D39B140007A98C /* SideMenuViewController.swift */; };
+		786C819A22D39CDC0007A98C /* SideMenuHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 786C819922D39CDC0007A98C /* SideMenuHeaderView.swift */; };
+		786C819C22D39D030007A98C /* SideMenuHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 786C819B22D39D030007A98C /* SideMenuHeaderView.xib */; };
+		786C81A222D3A0ED0007A98C /* SideMenuViewController+DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 786C81A122D3A0ED0007A98C /* SideMenuViewController+DataSource.swift */; };
+		786C81A622D3A3040007A98C /* SideMenuTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 786C81A422D3A3040007A98C /* SideMenuTableViewCell.swift */; };
+		786C81A722D3A3040007A98C /* SideMenuTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 786C81A522D3A3040007A98C /* SideMenuTableViewCell.xib */; };
+		786C81AA22D3A7FF0007A98C /* UserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 786C81A922D3A7FF0007A98C /* UserManager.swift */; };
 		90D2FB4BD63B2734F65E36B9 /* Pods_DemoTwitterTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15E6EC995D61C9CEEB1771EA /* Pods_DemoTwitterTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -105,6 +113,14 @@
 		786C818922D254FB0007A98C /* NewFeedViewController+DataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NewFeedViewController+DataSource.swift"; sourceTree = "<group>"; };
 		786C818B22D255750007A98C /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
 		786C818E22D329910007A98C /* NewPostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewPostViewController.swift; sourceTree = "<group>"; };
+		786C819022D39AF10007A98C /* SideMenu.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SideMenu.storyboard; sourceTree = "<group>"; };
+		786C819322D39B140007A98C /* SideMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuViewController.swift; sourceTree = "<group>"; };
+		786C819922D39CDC0007A98C /* SideMenuHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuHeaderView.swift; sourceTree = "<group>"; };
+		786C819B22D39D030007A98C /* SideMenuHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SideMenuHeaderView.xib; sourceTree = "<group>"; };
+		786C81A122D3A0ED0007A98C /* SideMenuViewController+DataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SideMenuViewController+DataSource.swift"; sourceTree = "<group>"; };
+		786C81A422D3A3040007A98C /* SideMenuTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SideMenuTableViewCell.swift; sourceTree = "<group>"; };
+		786C81A522D3A3040007A98C /* SideMenuTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SideMenuTableViewCell.xib; sourceTree = "<group>"; };
+		786C81A922D3A7FF0007A98C /* UserManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserManager.swift; sourceTree = "<group>"; };
 		A46FFC42A3E9B74E03567A19 /* Pods-DemoTwitterTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DemoTwitterTests.debug.xcconfig"; path = "Target Support Files/Pods-DemoTwitterTests/Pods-DemoTwitterTests.debug.xcconfig"; sourceTree = "<group>"; };
 		E215D53ECBEC9175A45816AC /* Pods-DemoTwitter.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DemoTwitter.debug.xcconfig"; path = "Target Support Files/Pods-DemoTwitter/Pods-DemoTwitter.debug.xcconfig"; sourceTree = "<group>"; };
 		F1A563A5CEA877520C41B7DC /* Pods-DemoTwitterTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DemoTwitterTests.release.xcconfig"; path = "Target Support Files/Pods-DemoTwitterTests/Pods-DemoTwitterTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -149,6 +165,7 @@
 				786C817322D23B140007A98C /* Search.storyboard */,
 				786C817B22D23B710007A98C /* Message.storyboard */,
 				786C817D22D23B7A0007A98C /* Notification.storyboard */,
+				786C819022D39AF10007A98C /* SideMenu.storyboard */,
 			);
 			path = StoryBoards;
 			sourceTree = "<group>";
@@ -232,6 +249,7 @@
 		782D068522CF39CD0014A273 /* Section */ = {
 			isa = PBXGroup;
 			children = (
+				786C819222D39B090007A98C /* SideMenu */,
 				786C818D22D3297C0007A98C /* NewPost */,
 				786C817122D23AE50007A98C /* Notification */,
 				786C817022D23AE00007A98C /* Message */,
@@ -382,6 +400,7 @@
 			isa = PBXGroup;
 			children = (
 				786C816522D1CF330007A98C /* FirebaseManager.swift */,
+				786C81A922D3A7FF0007A98C /* UserManager.swift */,
 			);
 			path = Manager;
 			sourceTree = "<group>";
@@ -422,6 +441,7 @@
 		786C817F22D24B5D0007A98C /* ReuseableView */ = {
 			isa = PBXGroup;
 			children = (
+				786C819522D39C5B0007A98C /* HeaderView */,
 				786C818022D24B6E0007A98C /* TableViewCell */,
 			);
 			path = ReuseableView;
@@ -430,8 +450,8 @@
 		786C818022D24B6E0007A98C /* TableViewCell */ = {
 			isa = PBXGroup;
 			children = (
-				786C818122D24B8E0007A98C /* PostTableViewCell.swift */,
-				786C818222D24B8E0007A98C /* PostTableViewCell.xib */,
+				786C81A322D3A2F40007A98C /* SideMenuTableViewCell */,
+				786C819622D39C630007A98C /* PostTableViewCell */,
 			);
 			path = TableViewCell;
 			sourceTree = "<group>";
@@ -442,6 +462,50 @@
 				786C818E22D329910007A98C /* NewPostViewController.swift */,
 			);
 			path = NewPost;
+			sourceTree = "<group>";
+		};
+		786C819222D39B090007A98C /* SideMenu */ = {
+			isa = PBXGroup;
+			children = (
+				786C819322D39B140007A98C /* SideMenuViewController.swift */,
+				786C81A122D3A0ED0007A98C /* SideMenuViewController+DataSource.swift */,
+			);
+			path = SideMenu;
+			sourceTree = "<group>";
+		};
+		786C819522D39C5B0007A98C /* HeaderView */ = {
+			isa = PBXGroup;
+			children = (
+				786C819822D39CA60007A98C /* SideMenuHeaderView */,
+			);
+			path = HeaderView;
+			sourceTree = "<group>";
+		};
+		786C819622D39C630007A98C /* PostTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				786C818122D24B8E0007A98C /* PostTableViewCell.swift */,
+				786C818222D24B8E0007A98C /* PostTableViewCell.xib */,
+			);
+			path = PostTableViewCell;
+			sourceTree = "<group>";
+		};
+		786C819822D39CA60007A98C /* SideMenuHeaderView */ = {
+			isa = PBXGroup;
+			children = (
+				786C819922D39CDC0007A98C /* SideMenuHeaderView.swift */,
+				786C819B22D39D030007A98C /* SideMenuHeaderView.xib */,
+			);
+			path = SideMenuHeaderView;
+			sourceTree = "<group>";
+		};
+		786C81A322D3A2F40007A98C /* SideMenuTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				786C81A422D3A3040007A98C /* SideMenuTableViewCell.swift */,
+				786C81A522D3A3040007A98C /* SideMenuTableViewCell.xib */,
+			);
+			path = SideMenuTableViewCell;
 			sourceTree = "<group>";
 		};
 		94DC682BB8C4C6DEFEF9A285 /* Pods */ = {
@@ -549,6 +613,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				782D066822CF30B50014A273 /* LaunchScreen.storyboard in Resources */,
+				786C819C22D39D030007A98C /* SideMenuHeaderView.xib in Resources */,
+				786C819122D39AF10007A98C /* SideMenu.storyboard in Resources */,
 				786C818422D24B8E0007A98C /* PostTableViewCell.xib in Resources */,
 				782D067E22CF319A0014A273 /* GoogleService-Info.plist in Resources */,
 				786C817E22D23B7A0007A98C /* Notification.storyboard in Resources */,
@@ -558,6 +624,7 @@
 				78049ED922D1B80F00548CFC /* Login.storyboard in Resources */,
 				786C817C22D23B710007A98C /* Message.storyboard in Resources */,
 				782D066322CF30B40014A273 /* Main.storyboard in Resources */,
+				786C81A722D3A3040007A98C /* SideMenuTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -581,6 +648,7 @@
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-DemoTwitter/Pods-DemoTwitter-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/KWDrawerController/KWDrawerController.framework",
 				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
 				"${BUILT_PRODUCTS_DIR}/RxRelay/RxRelay.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
@@ -594,6 +662,7 @@
 			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KWDrawerController.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxRelay.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
@@ -662,10 +731,15 @@
 				78049ED522D1B58D00548CFC /* RootTabBarController.swift in Sources */,
 				782D066022CF30B40014A273 /* BaseViewController.swift in Sources */,
 				786C816622D1CF330007A98C /* FirebaseManager.swift in Sources */,
+				786C819422D39B140007A98C /* SideMenuViewController.swift in Sources */,
+				786C81A622D3A3040007A98C /* SideMenuTableViewCell.swift in Sources */,
+				786C81AA22D3A7FF0007A98C /* UserManager.swift in Sources */,
 				786C816E22D1CFB10007A98C /* UIColor+Extension.swift in Sources */,
 				786C817622D23B300007A98C /* SearchViewController.swift in Sources */,
+				786C81A222D3A0ED0007A98C /* SideMenuViewController+DataSource.swift in Sources */,
 				786C818C22D255750007A98C /* String+Extension.swift in Sources */,
 				786C816422D1CF2B0007A98C /* StoryBoard.swift in Sources */,
+				786C819A22D39CDC0007A98C /* SideMenuHeaderView.swift in Sources */,
 				786C816C22D1CF420007A98C /* Config.swift in Sources */,
 				78049ED322D1B57000548CFC /* RootNavigationController.swift in Sources */,
 				782D06A522CF53AF0014A273 /* PostModel.swift in Sources */,

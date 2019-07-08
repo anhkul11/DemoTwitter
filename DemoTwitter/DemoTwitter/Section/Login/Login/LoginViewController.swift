@@ -43,8 +43,6 @@ class LoginViewController: UIViewController {
   func doLogin() {
     let userName = usernameTextField.text ?? ""
     let password = passwordTextField.text ?? ""
-    Defaults[.user] = FirebaseManager.shared.login(userName: userName, password: password)
-    Defaults[.isLogin] = true
-    UIAppDelegate.setupRootViewController()
+    UserManager.shared.login(userName: userName, password: password)
   }
 }

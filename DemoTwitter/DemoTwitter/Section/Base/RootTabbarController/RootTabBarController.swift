@@ -26,7 +26,7 @@ class RootTabBarController: UITabBarController {
     tabBar.tintColor = .tw_blue
     setupTabbarItems()
     
-    setupNewView()
+    setupNewButton()
   }
   
   func setupTabbarItems() {
@@ -48,7 +48,7 @@ class RootTabBarController: UITabBarController {
     self.setViewControllers(controllers, animated: true)
   }
   
-  func setupNewView() {
+  func setupNewButton() {
     let buttonNew = UIButton(frame: CGRect(x: 0, y: 0, width: 80, height: 80))
     buttonNew.setImage(UIImage(named: "ic_write"), for: .normal)
     buttonNew.tintColor = .tw_blue

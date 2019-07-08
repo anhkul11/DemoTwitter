@@ -9,6 +9,7 @@
 import Foundation
 import Firebase
 import SwiftyUserDefaults
+import KWDrawerController
 
 extension AppDelegate {
   func setupFireBase() {
@@ -19,7 +20,12 @@ extension AppDelegate {
     let isLogin = Defaults[.isLogin]
     if isLogin {
       rootTabbarController = RootTabBarController.instantiate()
-      self.window?.rootViewController = rootTabbarController
+      let sideMenuController = SideMenuViewController.instantiate()
+      
+      drawerController = DrawerController()
+      drawerController?.setViewController(rootTabbarController, for: .none)
+      drawerController?.setViewController(sideMenuController, for: .left)
+      self.window?.rootViewController = drawerController
     } else {
       let landingController = LandingViewController.instantiate()
       rootNavigationController = RootNavigationController(rootViewController: landingController)

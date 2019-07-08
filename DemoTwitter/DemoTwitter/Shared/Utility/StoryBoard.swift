@@ -16,6 +16,7 @@ public enum Storyboard: String {
   case Search
   case Notification
   case Message
+  case SideMenu
   
   public func instantiate<VC: UIViewController>(type: VC.Type) -> VC {
     var storyboardId = ""
