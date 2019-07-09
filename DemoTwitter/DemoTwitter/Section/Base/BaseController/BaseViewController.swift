@@ -95,7 +95,7 @@ extension BaseViewController {
   
   // MARK: Actions
   @objc func showMenu() {
-    
+    self.drawerController?.openSide(.left)
   }
   
   @objc func showSetting() {
