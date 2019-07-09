@@ -24,6 +24,10 @@ extension NewFeedViewController: UITableViewDataSource {
     cell.configure(postModel: posts[indexPath.row])
     return cell
   }
+  
+  func tableView(_ tableView: UITableView, editingStyleForRowAt indexPath: IndexPath) -> UITableViewCell.EditingStyle {
+    return .delete
+  }
 }
 
 // MARK: Delegate
@@ -32,4 +36,10 @@ extension NewFeedViewController: UITableViewDelegate {
     return
   }
   
+  func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+    if editingStyle == .delete {
+      let post = posts[indexPath.row]
+      FirebaseManager.shared.deletePost(postModel: post)
+    }
+  }
 }

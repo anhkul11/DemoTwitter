@@ -17,9 +17,17 @@ func calculatePartIndicator(number: Int, divideBy: Int) throws -> (Int, Int) {
   if divideBy <= 0 || number < 0 {
     throw SplitError.invalidInput("Wrong input")
   }
-  let parts = number % divideBy > 0 ? number / divideBy + 1 : number / divideBy
+  let parts = number%divideBy > 0 ? number/divideBy + 1 : number/divideBy
   let totalChacracters = "\(parts)/\(parts) ".count
-  return (parts,totalChacracters)
+  
+  var newNumber = totalChacracters*parts + number
+  var newParts = newNumber%divideBy > 0 ? newNumber/divideBy + 1 : newNumber/divideBy
+  let newTotalCharacter = "\(newParts)/\(newParts) ".count
+  if totalChacracters != newTotalCharacter {
+    newNumber = newTotalCharacter*newParts + number
+    newParts = newNumber%divideBy > 0 ? newNumber/divideBy + 1 : newNumber/divideBy
+  }
+  return (newParts,newTotalCharacter)
 }
 
 /// Split mess

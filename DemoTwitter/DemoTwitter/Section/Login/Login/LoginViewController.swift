@@ -18,6 +18,7 @@ class LoginViewController: UIViewController {
     return Storyboard.Login.instantiate(type: LoginViewController.self)
   }
   
+  @IBOutlet weak var titleLabel: UILabel!
   @IBOutlet weak var stackView: UIStackView!
   @IBOutlet weak var usernameTextField: UITextField!
   @IBOutlet weak var passwordTextField: UITextField!
@@ -31,6 +32,9 @@ class LoginViewController: UIViewController {
     bindingRx()
   }
   func setupUI() {
+    if let nav = self.navigationController as? RootNavigationController{
+      nav.navigationBar.topItem?.titleView = nav.titleImageView
+    }
     loginButton.setStyle(.login)
   }
   

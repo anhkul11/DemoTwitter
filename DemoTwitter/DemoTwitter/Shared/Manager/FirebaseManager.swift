@@ -18,6 +18,7 @@ final class FirebaseManager {
   
   let userRef = Database.database().reference(withPath: "user-model")
   
+  /// MARK: User model
   func login(userName: String, password: String) -> UserModel {
     return UserModel(name: "Anh Le", userName: "@Anh1234", passWord: "abc123!")
   }
@@ -26,7 +27,12 @@ final class FirebaseManager {
     FirebaseManager.shared.userRef.setValue(userModel)
   }
   
+  /// MARK: Post model
   func addPost(postModel: PostModel) {
     FirebaseManager.shared.postRef.childByAutoId().setValue(postModel.toAnyObject())
+  }
+  
+  func deletePost(postModel: PostModel) {
+    postModel.ref?.removeValue()
   }
 }

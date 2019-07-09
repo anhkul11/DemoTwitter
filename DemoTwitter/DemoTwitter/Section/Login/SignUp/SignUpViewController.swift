@@ -16,6 +16,7 @@ class SignUpViewController: UIViewController {
     return Storyboard.Login.instantiate(type: SignUpViewController.self)
   }
   
+  @IBOutlet weak var titleLabel: UILabel!
   @IBOutlet weak var stackView: UIStackView!
   @IBOutlet weak var nicknameTextField: UITextField!
   @IBOutlet weak var userNameTextField: UITextField!
@@ -25,6 +26,13 @@ class SignUpViewController: UIViewController {
   override func viewDidLoad() {
     super.viewDidLoad()
     
-    // Do any additional setup after loading the view.
+    setupUI()
+  }
+  
+  func setupUI() {
+    if let nav = self.navigationController as? RootNavigationController{
+      nav.navigationBar.topItem?.titleView = nav.titleImageView
+    }
+    signUpButton.setStyle(.login)
   }
 }

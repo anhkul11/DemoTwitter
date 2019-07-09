@@ -38,6 +38,8 @@ class NewFeedViewController: BaseViewController {
   func setupTableView() {
     tableView.separatorStyle = .singleLine
     tableView.registerCellNibForClass(PostTableViewCell.self)
+    let footerView = UIView(frame: CGRect(x: 0, y: 0, width: tableView.bounds.width, height: 0))
+    tableView.tableFooterView = footerView
     
     tableView.dataSource = self
     tableView.delegate = self
