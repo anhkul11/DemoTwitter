@@ -13,4 +13,13 @@ struct UserModel: Codable, DefaultsSerializable {
   var name: String
   var userName: String
   var passWord: String
+  
+  
+  func toAnyObject() -> Any {
+    return [
+      "name": name,
+      "userName": userName,
+      "passWord": passWord
+    ]
+  }
 }

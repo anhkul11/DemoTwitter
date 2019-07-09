@@ -107,19 +107,29 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yig-I5-fBO">
+                                <rect key="frame" x="20" y="453" width="374" height="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" red="1" green="0.18595074440000001" blue="0.1009728801" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="yig-I5-fBO" firstAttribute="top" secondItem="aph-SL-vum" secondAttribute="bottom" constant="10" id="5S6-xx-oCm"/>
                             <constraint firstItem="aph-SL-vum" firstAttribute="leading" secondItem="ytQ-Cr-gaV" secondAttribute="leading" constant="20" id="9B5-1H-pA7"/>
                             <constraint firstItem="ytQ-Cr-gaV" firstAttribute="trailing" secondItem="etv-Vi-cA9" secondAttribute="trailing" constant="20" id="Aff-lb-7sN"/>
                             <constraint firstItem="ytQ-Cr-gaV" firstAttribute="trailing" secondItem="aph-SL-vum" secondAttribute="trailing" constant="20" id="BXe-VO-eGz"/>
                             <constraint firstItem="etv-Vi-cA9" firstAttribute="leading" secondItem="ytQ-Cr-gaV" secondAttribute="leading" constant="20" id="GJK-jT-bO4"/>
                             <constraint firstItem="etv-Vi-cA9" firstAttribute="top" secondItem="ytQ-Cr-gaV" secondAttribute="top" constant="70" id="IMS-WT-Y3m"/>
+                            <constraint firstItem="yig-I5-fBO" firstAttribute="leading" secondItem="ytQ-Cr-gaV" secondAttribute="leading" constant="20" id="Zny-I9-p3K"/>
                             <constraint firstItem="aph-SL-vum" firstAttribute="centerY" secondItem="qAw-fX-Xgs" secondAttribute="centerY" id="kE0-dn-qb6"/>
+                            <constraint firstItem="ytQ-Cr-gaV" firstAttribute="trailing" secondItem="yig-I5-fBO" secondAttribute="trailing" constant="20" id="kLx-6X-MEX"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="ytQ-Cr-gaV"/>
                     </view>
                     <connections>
+                        <outlet property="errorLabel" destination="yig-I5-fBO" id="3Vz-pH-LQD"/>
                         <outlet property="loginButton" destination="twW-7e-Rom" id="ASK-JE-zdj"/>
                         <outlet property="passwordTextField" destination="dM2-GR-ax5" id="IEc-0U-3nH"/>
                         <outlet property="stackView" destination="aph-SL-vum" id="yfx-Gk-nA9"/>
@@ -139,12 +149,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Create your account" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lRr-Lg-fcX">
-                                <rect key="frame" x="20" y="90" width="374" height="39.666666666666657"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="33"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="D8h-UT-Ptl">
                                 <rect key="frame" x="20" y="169.66666666666663" width="374" height="190"/>
                                 <subviews>
@@ -175,19 +179,35 @@
                                     <constraint firstAttribute="height" constant="190" id="oTe-ex-uNu"/>
                                 </constraints>
                             </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Create your account" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lRr-Lg-fcX">
+                                <rect key="frame" x="20" y="90" width="374" height="39.666666666666657"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="33"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kog-sI-zwJ">
+                                <rect key="frame" x="20" y="369.66666666666669" width="374" height="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" red="1" green="0.18595074440000001" blue="0.1009728801" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="nbh-C6-FZZ" firstAttribute="trailing" secondItem="lRr-Lg-fcX" secondAttribute="trailing" constant="20" id="3VY-TK-hrm"/>
                             <constraint firstItem="D8h-UT-Ptl" firstAttribute="leading" secondItem="nbh-C6-FZZ" secondAttribute="leading" constant="20" id="402-sa-KRC"/>
                             <constraint firstItem="D8h-UT-Ptl" firstAttribute="top" secondItem="lRr-Lg-fcX" secondAttribute="bottom" constant="40" id="5Ay-2S-0yQ"/>
+                            <constraint firstItem="Kog-sI-zwJ" firstAttribute="top" secondItem="D8h-UT-Ptl" secondAttribute="bottom" constant="10" id="MV4-sM-BER"/>
+                            <constraint firstItem="nbh-C6-FZZ" firstAttribute="trailing" secondItem="Kog-sI-zwJ" secondAttribute="trailing" constant="20" id="Mw4-iE-vfJ"/>
                             <constraint firstItem="lRr-Lg-fcX" firstAttribute="top" secondItem="nbh-C6-FZZ" secondAttribute="top" constant="70" id="jCC-Sa-BH5"/>
+                            <constraint firstItem="Kog-sI-zwJ" firstAttribute="leading" secondItem="nbh-C6-FZZ" secondAttribute="leading" constant="20" id="mmM-1i-ggb"/>
                             <constraint firstItem="nbh-C6-FZZ" firstAttribute="trailing" secondItem="D8h-UT-Ptl" secondAttribute="trailing" constant="20" id="mrV-ji-dWq"/>
                             <constraint firstItem="lRr-Lg-fcX" firstAttribute="leading" secondItem="nbh-C6-FZZ" secondAttribute="leading" constant="20" id="sEs-Gv-BCM"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="nbh-C6-FZZ"/>
                     </view>
                     <connections>
+                        <outlet property="errorLabel" destination="Kog-sI-zwJ" id="T3j-Ul-xSG"/>
                         <outlet property="nicknameTextField" destination="fvL-az-vaZ" id="17f-5s-W4M"/>
                         <outlet property="passwordTextField" destination="WDZ-Yp-7c6" id="k8g-Q5-37b"/>
                         <outlet property="signUpButton" destination="a3l-6m-4pQ" id="ivF-2l-2SI"/>

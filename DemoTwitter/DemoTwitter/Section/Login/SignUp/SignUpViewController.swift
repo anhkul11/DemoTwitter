@@ -8,6 +8,9 @@
 //
 
 import UIKit
+import RxCocoa
+import RxSwift
+import SwiftyUserDefaults
 
 class SignUpViewController: UIViewController {
   
@@ -22,11 +25,15 @@ class SignUpViewController: UIViewController {
   @IBOutlet weak var userNameTextField: UITextField!
   @IBOutlet weak var passwordTextField: UITextField!
   @IBOutlet weak var signUpButton: UIButton!
+  @IBOutlet weak var errorLabel: UILabel!
+  
+  let disposeBag = DisposeBag()
   
   override func viewDidLoad() {
     super.viewDidLoad()
     
     setupUI()
+    bindingRx()
   }
   
   func setupUI() {
@@ -34,5 +41,39 @@ class SignUpViewController: UIViewController {
       nav.navigationBar.topItem?.titleView = nav.titleImageView
     }
     signUpButton.setStyle(.login)
+    errorLabel.isHidden = true
+  }
+  
+  func bindingRx() {
+    signUpButton.rx.tap.subscribe(onNext: { [weak self] (_) in
+      let nickname = self?.nicknameTextField.text ?? ""
+      let email = self?.userNameTextField.text ?? ""
+      let password = self?.passwordTextField.text ?? ""
+      
+      if let (validate,errorMessage) = self?.validateInput(nickname: nickname, userName: email, password: password) {
+        if validate {
+          UserManager.shared.signUp(nickname: nickname, userName: email, password: password)
+        } else {
+          self?.errorLabel.text = errorMessage
+          self?.errorLabel.isHidden = false
+        }
+      }
+    }).disposed(by: disposeBag)
+  }
+  
+  func validateInput(nickname: String, userName: String, password: String) -> (Bool,String) {
+    if nickname.isEmpty || userName.isEmpty || password.isEmpty {
+      return (false, "Please input nickname, username, password!")
+    }
+    
+    if userName.count < 8 || password.count < 8 || userName.contains(" ") || password.contains(" ") {
+      return (false, "Username, password must have aleast 8 characters, and don't have white space.")
+    }
+    
+    let models = Defaults[.users]
+    if models.contains(where: { $0.userName == userName}) {
+      return (false, "This username is already signed up.")
+    }
+    return (true,"")
   }
 }

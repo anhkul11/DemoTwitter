@@ -14,4 +14,6 @@ extension DefaultsKeys {
   static let isLogin = DefaultsKey<Bool>("isLogin", defaultValue: false)
   
   static let user = DefaultsKey<UserModel?>("user")
+  
+  static let users = DefaultsKey<[UserModel]>("users", defaultValue: [])
 }

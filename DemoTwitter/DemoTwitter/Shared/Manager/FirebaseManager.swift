@@ -16,17 +16,6 @@ final class FirebaseManager {
   
   let postRef = Database.database().reference(withPath: "post-model")
   
-  let userRef = Database.database().reference(withPath: "user-model")
-  
-  /// MARK: User model
-  func login(userName: String, password: String) -> UserModel {
-    return UserModel(name: "Anh Le", userName: "@Anh1234", passWord: "abc123!")
-  }
-  
-  func signUp(userModel: UserModel) {
-    FirebaseManager.shared.userRef.setValue(userModel)
-  }
-  
   /// MARK: Post model
   func addPost(postModel: PostModel) {
     FirebaseManager.shared.postRef.childByAutoId().setValue(postModel.toAnyObject())

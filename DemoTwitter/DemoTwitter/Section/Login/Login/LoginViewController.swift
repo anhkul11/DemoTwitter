@@ -23,6 +23,7 @@ class LoginViewController: UIViewController {
   @IBOutlet weak var usernameTextField: UITextField!
   @IBOutlet weak var passwordTextField: UITextField!
   @IBOutlet weak var loginButton: UIButton!
+  @IBOutlet weak var errorLabel: UILabel!
   
   let disposeBag = DisposeBag()
   override func viewDidLoad() {
@@ -36,6 +37,7 @@ class LoginViewController: UIViewController {
       nav.navigationBar.topItem?.titleView = nav.titleImageView
     }
     loginButton.setStyle(.login)
+    errorLabel.isHidden = true
   }
   
   func bindingRx() {
@@ -47,6 +49,21 @@ class LoginViewController: UIViewController {
   func doLogin() {
     let userName = usernameTextField.text ?? ""
     let password = passwordTextField.text ?? ""
-    UserManager.shared.login(userName: userName, password: password)
+    let userModels = Defaults[.users]
+    let currentUser = userModels.filter { (userModel) -> Bool in
+      return userModel.userName == userName && userModel.passWord == password
+    }
+    if currentUser.isEmpty {
+      showError()
+      
+    } else {
+      let user = UserModel(name: currentUser[0].name, userName: currentUser[0].userName, passWord: currentUser[0].passWord)
+      UserManager.shared.login(userModel: user)
+    }
+  }
+  
+  func showError() {
+    errorLabel.text = "Wrong username, password"
+    errorLabel.isHidden = false
   }
 }

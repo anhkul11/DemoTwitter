@@ -31,10 +31,10 @@ class RootTabBarController: UITabBarController {
   
   func setupTabbarItems() {
     let tabBarItems = [
-      UITabBarItem(title: nil, image: UIImage(named: "ic_home"), selectedImage: UIImage(named: "ic_home")),
-      UITabBarItem(title: nil, image: UIImage(named: "ic_search"), selectedImage: UIImage(named: "ic_search")),
-      UITabBarItem(title: nil, image: UIImage(named: "ic_notification"), selectedImage: UIImage(named: "ic_notification")),
-      UITabBarItem(title: nil, image: UIImage(named: "ic_message"), selectedImage: UIImage(named: "ic_message"))]
+      UITabBarItem(title: "Home", image: UIImage(named: "ic_home"), selectedImage: UIImage(named: "ic_home")),
+      UITabBarItem(title: "Search", image: UIImage(named: "ic_search"), selectedImage: UIImage(named: "ic_search")),
+      UITabBarItem(title: "Notification", image: UIImage(named: "ic_notification"), selectedImage: UIImage(named: "ic_notification")),
+      UITabBarItem(title: "Message", image: UIImage(named: "ic_message"), selectedImage: UIImage(named: "ic_message"))]
     let viewControllers: [UIViewController] = [
       NewFeedViewController.instantiate(),
       SearchViewController.instantiate(),

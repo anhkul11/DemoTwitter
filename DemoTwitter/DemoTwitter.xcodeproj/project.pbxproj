@@ -121,6 +121,7 @@
 		786C81A422D3A3040007A98C /* SideMenuTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SideMenuTableViewCell.swift; sourceTree = "<group>"; };
 		786C81A522D3A3040007A98C /* SideMenuTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SideMenuTableViewCell.xib; sourceTree = "<group>"; };
 		786C81A922D3A7FF0007A98C /* UserManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserManager.swift; sourceTree = "<group>"; };
+		786C81AB22D4A0CA0007A98C /* DemoTwitter.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DemoTwitter.entitlements; sourceTree = "<group>"; };
 		A46FFC42A3E9B74E03567A19 /* Pods-DemoTwitterTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DemoTwitterTests.debug.xcconfig"; path = "Target Support Files/Pods-DemoTwitterTests/Pods-DemoTwitterTests.debug.xcconfig"; sourceTree = "<group>"; };
 		E215D53ECBEC9175A45816AC /* Pods-DemoTwitter.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DemoTwitter.debug.xcconfig"; path = "Target Support Files/Pods-DemoTwitter/Pods-DemoTwitter.debug.xcconfig"; sourceTree = "<group>"; };
 		F1A563A5CEA877520C41B7DC /* Pods-DemoTwitterTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DemoTwitterTests.release.xcconfig"; path = "Target Support Files/Pods-DemoTwitterTests/Pods-DemoTwitterTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -226,6 +227,7 @@
 		782D065C22CF30B40014A273 /* DemoTwitter */ = {
 			isa = PBXGroup;
 			children = (
+				786C81AB22D4A0CA0007A98C /* DemoTwitter.entitlements */,
 				782D068E22CF3A270014A273 /* AppDelegate */,
 				782D068722CF39DC0014A273 /* View */,
 				782D069B22CF431E0014A273 /* Model */,
@@ -581,6 +583,11 @@
 				TargetAttributes = {
 					782D065922CF30B40014A273 = {
 						CreatedOnToolsVersion = 10.2.1;
+						SystemCapabilities = {
+							com.apple.Keychain = {
+								enabled = 1;
+							};
+						};
 					};
 					782D066D22CF30B50014A273 = {
 						CreatedOnToolsVersion = 10.2.1;
@@ -921,6 +928,7 @@
 			baseConfigurationReference = E215D53ECBEC9175A45816AC /* Pods-DemoTwitter.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = DemoTwitter/DemoTwitter.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3925K7RKU8;
 				INFOPLIST_FILE = "$(SRCROOT)/DemoTwitter/SupportFile/Info.plist";
@@ -940,6 +948,7 @@
 			baseConfigurationReference = 3B5735EDB532E3EE5682B120 /* Pods-DemoTwitter.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = DemoTwitter/DemoTwitter.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3925K7RKU8;
 				INFOPLIST_FILE = "$(SRCROOT)/DemoTwitter/SupportFile/Info.plist";

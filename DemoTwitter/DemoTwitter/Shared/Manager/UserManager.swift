@@ -12,15 +12,22 @@ import SwiftyUserDefaults
 final class UserManager {
   public static let shared = UserManager()
   
-  func login(userName: String, password: String) {
-    Defaults[.user] = FirebaseManager.shared.login(userName: userName, password: password)
+  func login(userModel: UserModel) {
+    Defaults[.user] = userModel
     Defaults[.isLogin] = true
     UIAppDelegate.setupRootViewController()
   }
   
   func logout() {
-    Defaults.remove(.user)
     Defaults[.isLogin] = false
+    UIAppDelegate.setupRootViewController()
+  }
+  
+  func signUp(nickname: String, userName: String, password: String) {
+    let userModel = UserModel(name: nickname, userName: userName, passWord: password)
+    Defaults[.users].append(userModel)
+    Defaults[.user] = userModel
+    Defaults[.isLogin] = true
     UIAppDelegate.setupRootViewController()
   }
 }
