@@ -55,26 +55,36 @@
                                     <constraint firstAttribute="width" constant="50" id="uLB-Lq-oec"/>
                                 </constraints>
                             </imageView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="What's is happening?" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="kcJ-DW-Hh5">
-                                <rect key="frame" x="86" y="40" width="308" height="696"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="kcJ-DW-Hh5">
+                                <rect key="frame" x="86" y="40" width="308" height="646"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What's is happening?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jn9-kM-9a3">
+                                <rect key="frame" x="91" y="48" width="303" height="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="Jn9-kM-9a3" firstAttribute="leading" secondItem="mEO-cu-U6B" secondAttribute="trailing" constant="21" id="29Z-9C-3Bw"/>
                             <constraint firstItem="kcJ-DW-Hh5" firstAttribute="top" secondItem="72J-5M-Sxu" secondAttribute="top" constant="20" id="Kx3-Ob-Ta9"/>
                             <constraint firstItem="mEO-cu-U6B" firstAttribute="leading" secondItem="72J-5M-Sxu" secondAttribute="leading" constant="20" id="VqD-ZX-PIn"/>
                             <constraint firstItem="kcJ-DW-Hh5" firstAttribute="leading" secondItem="mEO-cu-U6B" secondAttribute="trailing" constant="16" id="ghu-g7-uCF"/>
-                            <constraint firstItem="72J-5M-Sxu" firstAttribute="bottom" secondItem="kcJ-DW-Hh5" secondAttribute="bottom" id="hEf-Ft-fx6"/>
+                            <constraint firstItem="72J-5M-Sxu" firstAttribute="bottom" secondItem="kcJ-DW-Hh5" secondAttribute="bottom" constant="50" id="hEf-Ft-fx6"/>
+                            <constraint firstItem="Jn9-kM-9a3" firstAttribute="trailing" secondItem="kcJ-DW-Hh5" secondAttribute="trailing" id="jSB-fD-trU"/>
                             <constraint firstItem="72J-5M-Sxu" firstAttribute="trailing" secondItem="kcJ-DW-Hh5" secondAttribute="trailing" constant="20" id="ows-aN-Ok6"/>
+                            <constraint firstItem="Jn9-kM-9a3" firstAttribute="top" secondItem="72J-5M-Sxu" secondAttribute="top" constant="28" id="u4c-Wb-glj"/>
                             <constraint firstItem="mEO-cu-U6B" firstAttribute="top" secondItem="72J-5M-Sxu" secondAttribute="top" constant="20" id="v9c-rk-g8i"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="72J-5M-Sxu"/>
                     </view>
                     <connections>
                         <outlet property="imageView" destination="mEO-cu-U6B" id="fuN-A5-tHc"/>
+                        <outlet property="placeHolderLabel" destination="Jn9-kM-9a3" id="ehV-pM-ofU"/>
                         <outlet property="textView" destination="kcJ-DW-Hh5" id="3ax-va-ncm"/>
                     </connections>
                 </viewController>

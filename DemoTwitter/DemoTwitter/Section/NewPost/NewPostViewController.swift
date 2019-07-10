@@ -8,6 +8,8 @@
 
 import UIKit
 import SwiftyUserDefaults
+import RxSwift
+import RxCocoa
 
 class NewPostViewController: BaseViewController {
   
@@ -18,13 +20,16 @@ class NewPostViewController: BaseViewController {
   
   @IBOutlet weak var imageView: UIImageView!
   @IBOutlet weak var textView: UITextView!
+  @IBOutlet weak var placeHolderLabel: UILabel!
   
   var userModel: UserModel? = Defaults[.user]
+  let disposeBag = DisposeBag()
   
   override func viewDidLoad() {
     super.viewDidLoad()
     
     setupUI()
+    bindingRx()
   }
   
   func setupUI() {
@@ -32,6 +37,12 @@ class NewPostViewController: BaseViewController {
     textView.becomeFirstResponder()
     textView.font = UIFont.systemFont(ofSize: 16)
     setupNavigation()
+  }
+  
+  func bindingRx() {
+    textView.rx.text.orEmpty.subscribe(onNext: { [unowned self] (value) in
+      self.placeHolderLabel.isHidden = !value.isEmpty
+    }).disposed(by: disposeBag)
   }
   
   func setupNavigation() {

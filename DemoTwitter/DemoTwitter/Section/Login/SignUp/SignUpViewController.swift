@@ -47,6 +47,7 @@ class SignUpViewController: UIViewController {
     signUpButton.setStyle(.login)
     errorLabel.isHidden = true
     
+    hideKeyboardWhenTappedAround()
     animationKeyboard()
   }
   
