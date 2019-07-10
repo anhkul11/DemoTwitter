@@ -6,4 +6,17 @@
 //  Copyright © 2019 Anh Lê. All rights reserved.
 //
 
-import Foundation
+import UIKit
+
+extension UIViewController {
+  // Hide keyboard when tap outside keyboard
+  func hideKeyboardWhenTappedAround() {
+    let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(UIViewController.dismissKeyboard))
+    tap.cancelsTouchesInView = false
+    view.addGestureRecognizer(tap)
+  }
+  
+  @objc func dismissKeyboard() {
+    view.endEditing(true)
+  }
+}

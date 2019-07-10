@@ -16,6 +16,7 @@
 		78049EE122D1BC7500548CFC /* NewFeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78049EE022D1BC7500548CFC /* NewFeedViewController.swift */; };
 		78049EEA22D1C74D00548CFC /* LandingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78049EE922D1C74D00548CFC /* LandingViewController.swift */; };
 		78049EEC22D1C76100548CFC /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78049EEB22D1C76100548CFC /* SignUpViewController.swift */; };
+		782325A822D585CD00FB10E6 /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 782325A722D585CD00FB10E6 /* UIViewController+Extension.swift */; };
 		782D065E22CF30B40014A273 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 782D065D22CF30B40014A273 /* AppDelegate.swift */; };
 		782D066022CF30B40014A273 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 782D065F22CF30B40014A273 /* BaseViewController.swift */; };
 		782D066322CF30B40014A273 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 782D066122CF30B40014A273 /* Main.storyboard */; };
@@ -79,6 +80,7 @@
 		78049EE022D1BC7500548CFC /* NewFeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewFeedViewController.swift; sourceTree = "<group>"; };
 		78049EE922D1C74D00548CFC /* LandingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingViewController.swift; sourceTree = "<group>"; };
 		78049EEB22D1C76100548CFC /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		782325A722D585CD00FB10E6 /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
 		782D065A22CF30B40014A273 /* DemoTwitter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DemoTwitter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		782D065D22CF30B40014A273 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		782D065F22CF30B40014A273 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
@@ -202,6 +204,13 @@
 				78049EEB22D1C76100548CFC /* SignUpViewController.swift */,
 			);
 			path = SignUp;
+			sourceTree = "<group>";
+		};
+		782325AF22D586F100FB10E6 /* ThirdParty */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ThirdParty;
 			sourceTree = "<group>";
 		};
 		782D065122CF30B40014A273 = {
@@ -369,6 +378,7 @@
 		786C815322D1CE650007A98C /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				782325AF22D586F100FB10E6 /* ThirdParty */,
 				786C816022D1CF100007A98C /* Utility */,
 				786C815F22D1CF0A0007A98C /* Manager */,
 				786C815E22D1CF020007A98C /* Extension */,
@@ -394,6 +404,7 @@
 				786C818522D254520007A98C /* UITableView+Extension.swift */,
 				786C818722D2546C0007A98C /* UICollectionView+Extension.swift */,
 				786C818B22D255750007A98C /* String+Extension.swift */,
+				782325A722D585CD00FB10E6 /* UIViewController+Extension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -746,6 +757,7 @@
 				786C81A222D3A0ED0007A98C /* SideMenuViewController+DataSource.swift in Sources */,
 				786C818C22D255750007A98C /* String+Extension.swift in Sources */,
 				786C816422D1CF2B0007A98C /* StoryBoard.swift in Sources */,
+				782325A822D585CD00FB10E6 /* UIViewController+Extension.swift in Sources */,
 				786C819A22D39CDC0007A98C /* SideMenuHeaderView.swift in Sources */,
 				786C816C22D1CF420007A98C /* Config.swift in Sources */,
 				78049ED322D1B57000548CFC /* RootNavigationController.swift in Sources */,

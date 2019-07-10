@@ -22,6 +22,7 @@ class RootTabBarController: UITabBarController {
   }
   
   func setupUI() {
+    delegate = self
     view.backgroundColor = .white
     tabBar.tintColor = .tw_blue
     setupTabbarItems()
@@ -71,5 +72,15 @@ class RootTabBarController: UITabBarController {
     let newPostVC = NewPostViewController.instantiate()
     let rootNavigation = RootNavigationController(rootViewController: newPostVC)
     self.present(rootNavigation, animated: true, completion: nil)
+  }
+  
+  func playAnimation() {
+    
+  }
+}
+
+extension RootTabBarController: UITabBarControllerDelegate {
+  override func tabBar(_ tabBar: UITabBar, didSelect item: UITabBarItem) {
+    playAnimation()
   }
 }
