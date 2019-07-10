@@ -19,6 +19,8 @@ class SignUpViewController: UIViewController {
     return Storyboard.Login.instantiate(type: SignUpViewController.self)
   }
   
+  @IBOutlet weak var scrollView: UIScrollView!
+  @IBOutlet weak var contentView: UIView!
   @IBOutlet weak var titleLabel: UILabel!
   @IBOutlet weak var stackView: UIStackView!
   @IBOutlet weak var nicknameTextField: UITextField!
@@ -26,6 +28,8 @@ class SignUpViewController: UIViewController {
   @IBOutlet weak var passwordTextField: UITextField!
   @IBOutlet weak var signUpButton: UIButton!
   @IBOutlet weak var errorLabel: UILabel!
+  
+  @IBOutlet weak var errorLabelBottomConstraint: NSLayoutConstraint!
   
   let disposeBag = DisposeBag()
   
@@ -42,6 +46,8 @@ class SignUpViewController: UIViewController {
     }
     signUpButton.setStyle(.login)
     errorLabel.isHidden = true
+    
+    animationKeyboard()
   }
   
   func bindingRx() {
@@ -75,5 +81,25 @@ class SignUpViewController: UIViewController {
       return (false, "This username is already signed up.")
     }
     return (true,"")
+  }
+  
+  func animationKeyboard() {
+    NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow(notification:)), name: UIResponder.keyboardWillShowNotification, object: nil)
+    NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide(notification:)), name: UIResponder.keyboardWillHideNotification, object: nil)
+    
+  }
+  @objc func keyboardWillShow(notification: Notification) {
+    if let keyboardSize = (notification.userInfo?[UIResponder.keyboardFrameEndUserInfoKey] as? NSValue)?.cgRectValue {
+      errorLabelBottomConstraint.constant += keyboardSize.height
+      view.layoutIfNeeded()
+    }
+    
+  }
+  
+  @objc func keyboardWillHide(notification: Notification) {
+    if let keyboardSize = (notification.userInfo?[UIResponder.keyboardFrameEndUserInfoKey] as? NSValue)?.cgRectValue {
+      errorLabelBottomConstraint.constant -= keyboardSize.height
+      view.layoutIfNeeded()
+    }
   }
 }
