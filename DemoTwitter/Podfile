@@ -11,6 +11,9 @@ target 'DemoTwitter' do
   pod 'Firebase/Core'
   pod 'Firebase/Analytics'
   pod 'Firebase/Database'
+  pod 'SwiftyUserDefaults', '~> 4.0'
+  pod 'SnapKit', '~> 5.0.0'
+  pod 'KWDrawerController'
 
   target 'DemoTwitterTests' do
     inherit! :search_paths

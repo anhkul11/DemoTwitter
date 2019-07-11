@@ -7,9 +7,19 @@
 //
 
 import Foundation
+import SwiftyUserDefaults
 
-struct UserModel {
+struct UserModel: Codable, DefaultsSerializable {
   var name: String
   var userName: String
   var passWord: String
+  
+  
+  func toAnyObject() -> Any {
+    return [
+      "name": name,
+      "userName": userName,
+      "passWord": passWord
+    ]
+  }
 }
