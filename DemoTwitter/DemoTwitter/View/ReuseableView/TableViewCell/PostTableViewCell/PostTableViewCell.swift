@@ -10,6 +10,7 @@ import UIKit
 import SnapKit
 import RxCocoa
 import RxSwift
+import Lottie
 
 class PostTableViewCell: UITableViewCell {
   
@@ -80,7 +81,7 @@ class PostTableViewCell: UITableViewCell {
     
     isLiked.subscribe(onNext: { [weak self] (isLiked) in
       if isLiked {
-        self?.likeButton.setImage(UIImage(named: "ic_heart_red"), for: .normal)
+        self?.playAnimation()
       } else {
         self?.likeButton.setImage(UIImage(named: "ic_heart"), for: .normal)
       }
@@ -92,5 +93,21 @@ class PostTableViewCell: UITableViewCell {
     self.accountLabel.text = postModel.account
     self.timeLabel.text = postModel.dateTime.prefix(10).lowercased()
     self.messageLabel.text = postModel.message
+  }
+  
+  func playAnimation() {
+    guard let imageFrame = self.likeButton.imageView?.frame else {
+      return
+    }
+    let lottie = AnimationView(name: "heart_animation")
+    lottie.frame = CGRect(x: -imageFrame.width/2, y: -imageFrame.height/2, width: imageFrame.width*2, height: imageFrame.height*2)
+    likeButton.addSubview(lottie)
+    likeButton.bringSubviewToFront(lottie)
+    lottie.play(fromProgress: 0, toProgress: 0.5, loopMode: nil) { [weak self] (isFinish) in
+      lottie.removeFromSuperview()
+      if isFinish {
+        self?.likeButton.setImage(UIImage(named: "ic_heart_red"), for: .normal)
+      }
+    }
   }
 }

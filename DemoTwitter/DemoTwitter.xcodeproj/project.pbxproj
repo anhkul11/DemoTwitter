@@ -16,6 +16,7 @@
 		78049EE122D1BC7500548CFC /* NewFeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78049EE022D1BC7500548CFC /* NewFeedViewController.swift */; };
 		78049EEA22D1C74D00548CFC /* LandingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78049EE922D1C74D00548CFC /* LandingViewController.swift */; };
 		78049EEC22D1C76100548CFC /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78049EEB22D1C76100548CFC /* SignUpViewController.swift */; };
+		78092ED622D73C1800CF356F /* heart_animation.json in Resources */ = {isa = PBXBuildFile; fileRef = 78092ED522D73C1800CF356F /* heart_animation.json */; };
 		782325A822D585CD00FB10E6 /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 782325A722D585CD00FB10E6 /* UIViewController+Extension.swift */; };
 		782D065E22CF30B40014A273 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 782D065D22CF30B40014A273 /* AppDelegate.swift */; };
 		782D066022CF30B40014A273 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 782D065F22CF30B40014A273 /* BaseViewController.swift */; };
@@ -80,6 +81,7 @@
 		78049EE022D1BC7500548CFC /* NewFeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewFeedViewController.swift; sourceTree = "<group>"; };
 		78049EE922D1C74D00548CFC /* LandingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingViewController.swift; sourceTree = "<group>"; };
 		78049EEB22D1C76100548CFC /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		78092ED522D73C1800CF356F /* heart_animation.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = heart_animation.json; sourceTree = "<group>"; };
 		782325A722D585CD00FB10E6 /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
 		782D065A22CF30B40014A273 /* DemoTwitter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DemoTwitter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		782D065D22CF30B40014A273 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -328,6 +330,7 @@
 		782D069322CF3A8A0014A273 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				78092ED522D73C1800CF356F /* heart_animation.json */,
 				782D066422CF30B50014A273 /* Assets.xcassets */,
 			);
 			path = Resource;
@@ -643,6 +646,7 @@
 				786C817C22D23B710007A98C /* Message.storyboard in Resources */,
 				782D066322CF30B40014A273 /* Main.storyboard in Resources */,
 				786C81A722D3A3040007A98C /* SideMenuTableViewCell.xib in Resources */,
+				78092ED622D73C1800CF356F /* heart_animation.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -673,6 +677,7 @@
 				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyUserDefaults/SwiftyUserDefaults.framework",
 				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/lottie-ios/Lottie.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -687,6 +692,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyUserDefaults.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Lottie.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -58,6 +58,7 @@ PODS:
     - KWDrawerController/Core (= 4.2)
   - KWDrawerController/Core (4.2)
   - leveldb-library (1.20)
+  - lottie-ios (3.0.4)
   - nanopb (0.3.901):
     - nanopb/decode (= 0.3.901)
     - nanopb/encode (= 0.3.901)
@@ -77,6 +78,7 @@ DEPENDENCIES:
   - Firebase/Core
   - Firebase/Database
   - KWDrawerController
+  - lottie-ios
   - RxCocoa (~> 5)
   - RxSwift (~> 5)
   - SnapKit (~> 5.0.0)
@@ -94,6 +96,7 @@ SPEC REPOS:
     - GoogleUtilities
     - KWDrawerController
     - leveldb-library
+    - lottie-ios
     - nanopb
     - RxCocoa
     - RxRelay
@@ -112,6 +115,7 @@ SPEC CHECKSUMS:
   GoogleUtilities: 04fce34bcd5620c1ee76fb79172105c74a4df335
   KWDrawerController: 244ecb42378bd13a56826458647b76758db5cb67
   leveldb-library: 08cba283675b7ed2d99629a4bc5fd052cd2bb6a5
+  lottie-ios: 55a2de40418f8de2b155efaba4d4d1a025a5c570
   nanopb: 2901f78ea1b7b4015c860c2fdd1ea2fee1a18d48
   RxCocoa: fcf32050ac00d801f34a7f71d5e8e7f23026dcd8
   RxRelay: 4f7409406a51a55cd88483f21ed898c234d60f18
@@ -119,6 +123,6 @@ SPEC CHECKSUMS:
   SnapKit: fd22d10eb9aff484d79a8724eab922c1ddf89bcf
   SwiftyUserDefaults: 6a1951df1daa19337862b677dd9a4b9bd4c288cd
 
-PODFILE CHECKSUM: 340bb0588f7fcf2fd7ff8145f7711a5a965997cb
+PODFILE CHECKSUM: 92a58b084de059499ba40304bf7a8b89b8a9ec78
 
 COCOAPODS: 1.6.1
