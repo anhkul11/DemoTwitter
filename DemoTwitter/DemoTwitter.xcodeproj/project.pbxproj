@@ -940,6 +940,7 @@
 			baseConfigurationReference = E215D53ECBEC9175A45816AC /* Pods-DemoTwitter.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_ENTITLEMENTS = DemoTwitter/DemoTwitter.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3925K7RKU8;
@@ -960,6 +961,7 @@
 			baseConfigurationReference = 3B5735EDB532E3EE5682B120 /* Pods-DemoTwitter.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_ENTITLEMENTS = DemoTwitter/DemoTwitter.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3925K7RKU8;
